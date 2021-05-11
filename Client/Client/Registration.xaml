@@ -1,0 +1,133 @@
+﻿<Window x:Class="Client.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize"
+        MouseDown="Window_MouseDown"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="15" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7be9f6" Offset="0.0"/>
+                    <GradientStop Color="#f083da" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+
+
+        </Border>
+
+        <!-- ELSŐ SOR: LOGÓ, SZÖVEG -->
+
+        <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <Image Source="D:\Egyetem\Távközlő\alapverzió\Client\Client\Images\white-house-icon-logo-1.png" Width="80"/>
+            <TextBlock Text="Modern Design"
+                       FontWeight="Light"
+                       FontFamily="Helvetica"
+                       FontSize="24"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       />
+        </StackPanel>
+
+        <!-- MÁSODIK SOR: BEJELENTKEZÉSI INFORMÁCIÓK -->
+
+        <StackPanel Grid.Row="1">
+
+            <!-- Username-->
+            <StackPanel Orientation="Horizontal">
+                <TextBox FontFamily="Helvetica"
+                         FontWeight="Light"
+                         Text="Username"
+                         Name="textBox1"
+                         FontSize="22"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Foreground="White"
+                         HorizontalAlignment="Left"
+                         Opacity="0.5"
+                         Width="230"
+                         Height="25"
+                         Margin="66 0 0 0"
+                         />
+                <Image Source="D:\Egyetem\Távközlő\alapverzió\Client\Client\Images\account2.png" Width="25" />
+
+            </StackPanel>
+
+            <Border Width="250"
+                    Height="3"
+                    Background="white"
+                    Opacity="0.5"
+                    />
+
+            <!-- PASSWORD-->
+            <StackPanel Orientation="Horizontal">
+                <PasswordBox FontFamily="Helvetica"
+                         FontWeight="Light"
+                         Password="Password"
+                         Name="textBox2"
+                         FontSize="22"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Foreground="White"
+                         HorizontalAlignment="Left"
+                         Opacity="0.5"
+                         Width="230"
+                         Height="25"
+                         Margin="66 0 0 0"
+                         />
+                <Image Source="D:\Egyetem\Távközlő\alapverzió\Client\Client\Images\password.png" Width="25" />
+                
+            
+
+            </StackPanel>
+            <Border Width="250"
+                    Height="3"
+                    Background="white"
+                    Opacity="0.5"
+                    />
+
+            <!-- PASSWORD2-->
+            <StackPanel Orientation="Horizontal">
+                <PasswordBox FontFamily="Helvetica"
+                         FontWeight="Light"
+                         Password="Password"
+                         Name="textBox3"
+                         FontSize="22"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Foreground="White"
+                         HorizontalAlignment="Left"
+                         Opacity="0.5"
+                         Width="230"
+                         Height="25"
+                         Margin="66 0 0 0"
+                         />
+                <Image Source="D:\Egyetem\Távközlő\alapverzió\Client\Client\Images\password.png" Width="25" />
+
+            </StackPanel>
+            <Border Width="250"
+                    Height="3"
+                    Background="white"
+                    Opacity="0.5"
+                    />
+
+            <StackPanel Orientation="Horizontal" Margin="0 50">
+                <Button x:Name="RegisterButton" Click="RegisterButton_Click" Content="Apply" Width="110" Height="40" Margin="130 0 60 0" FontSize="16" FontWeight="Bold"/>
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
